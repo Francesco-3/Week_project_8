@@ -1,0 +1,118 @@
+/* -- Sfondo Dettagli -- */
+.weather-clear {
+  background-color: #87CEFA;
+}
+
+.weather-few-clouds {
+  background-color: #ADD8E6;
+}
+
+.weather-scattered-clouds {
+  background-color: #B0C4DE;
+}
+
+.weather-clouds {
+  background-color: #A9A9A9;
+}
+
+.weather-overcast {
+  background-color: #808080;
+}
+
+.weather-light-rain {
+  background-color: #5F9EA0;
+}
+
+.weather-moderate-rain {
+  background-color: #4682B4;
+}
+
+.weather-heavy-rain {
+  background-color: #2F4F4F;
+}
+
+.weather-thunderstorm {
+  background-color: #4B0082;
+}
+
+.weather-snow {
+  background-color: #F0F8FF;
+}
+
+.weather-mist {
+  background-color: #D3D3D3;
+}
+
+.weather-fog {
+  background-color: #C0C0C0;
+}
+
+.weather-strong-wind {
+  background-color: #87CEEB;
+}
+
+.weather-storm {
+  background-color: #708090;
+}
+
+.weather-tornado {
+  background-color: #2F4F4F;
+}
+
+.weather-default {
+  background-color: #343a40;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  z-index: 1050;
+  font-size: 1.7rem;
+}
+
+nav {
+  height: 7vh;
+}
+
+/* --- Barra di ricerca --- */
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.searchBox input {
+  width: 0;
+  opacity: 0;
+  padding-left: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  transition: none;
+  transform: translateX(100%);
+  animation-fill-mode: forwards;
+}
+
+.searchBox.expanded input {
+  width: 200px;
+  opacity: 1;
+  padding-left: 10px;
+  border-bottom: 1px solid white;
+  animation: slideInFromRight 0.6s ease forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
